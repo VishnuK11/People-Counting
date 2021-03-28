@@ -217,8 +217,8 @@ class Tracker:
        print("Total Right Moves:",t_rights)
 
        self.unique_count = len(set(self.counter))
-       cv2.putText(frame, "Current Persons: " + str(self.current_count), (frame.shape[1]-150, 50), 0, 0.5, (0, 0, 255), 1)
-       cv2.putText(frame, "Unique Persons: " + str(self.unique_count), (frame.shape[1]-150,80), 0, 0.5, (0,0,255), 1)
-       cv2.putText(frame, "Total Left Moving: " + str(t_lefts), (frame.shape[1]-150, 110), 0, 0.5, (0, 0, 255), 1)
+       cv2.putText(frame, "Current Persons: " + str(self.current_count), (frame.shape[1]-200, 50), 0, 0.5, (0, 0, 255), 1)
+       cv2.putText(frame, "Unique Persons: " + str(self.unique_count), (frame.shape[1]-200,80), 0, 0.5, (0,0,255), 1)
+       cv2.putText(frame, "Total Left Moving: " + str(t_lefts), (frame.shape[1]-200, 110), 0, 0.5, (0, 0, 255), 1)
        
        return frame
