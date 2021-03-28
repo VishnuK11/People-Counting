@@ -4,9 +4,6 @@ This project involves Object tracking implemented with YOLOv4, DeepSort, and Ten
 
 ## Demo of Object Tracker on Persons
 <p align="center"><img src="data/helpers/demo.gif"\></p>
-<p align="center"><img src="data/helpers/demo.gif"\></p>
-<p align="center"><img src="data/helpers/demo.gif"\></p>
-<p align="center"><img src="data/helpers/demo.gif"\></p>
 
 ## Clone this repository:
 ```bash
@@ -17,7 +14,7 @@ git clone 'https://github.com/VishnuK11/People-Counting'
 ```
 
 ## Getting Started
-To get started, install the proper dependencies either via Anaconda or Pip. I recommend Anaconda route for people using a GPU as it configures CUDA toolkit version for you.
+To get started, install the proper dependencies using Pip. Refer to tangoeye_run.ipynb for using code blocks. Alternatively, individual code blocks are explained below.
 
 ### Pip
 (TensorFlow 2 packages require a pip version >19.0.)
