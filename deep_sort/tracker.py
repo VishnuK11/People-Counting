@@ -196,10 +196,10 @@ class Tracker:
            
            
            # draw bbox on screen
-           
-           cv2.rectangle(frame, (int(bbox[0]), int(bbox[1])), (int(bbox[2]), int(bbox[3])), color, 2)
-           cv2.rectangle(frame, (int(bbox[0]), int(bbox[1]-30)), (int(bbox[0])+(5)*8, int(bbox[1])), color, -1)
-           cv2.putText(frame, str(track.track_id)+lr,(int(bbox[0]), int(bbox[1]-10)),0, 0.5, (255,255,255),1)
+           if((bbox[2]-bbox[0])*(bbox[3]-bbox[1])<0.5*frame.shape[0]*frame.shape[1]):
+               cv2.rectangle(frame, (int(bbox[0]), int(bbox[1])), (int(bbox[2]), int(bbox[3])), color, 2)
+               cv2.rectangle(frame, (int(bbox[0]), int(bbox[1]-30)), (int(bbox[0])+(5)*8, int(bbox[1])), color, -1)
+               cv2.putText(frame, str(track.track_id)+lr,(int(bbox[0]), int(bbox[1]-10)),0, 0.5, (255,255,255),1)
            
            self.counter.append(int(track.track_id))
            self.current_count += 1
