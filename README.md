@@ -9,8 +9,8 @@ This project involves Object tracking implemented with YOLOv4, DeepSort, and Ten
 <p align="center"><img src="data/helpers/demo.gif"\></p>
 
 ## Clone this repository:
-git clone 'https://github.com/VishnuK11/People-Counting'
 ```bash
+git clone 'https://github.com/VishnuK11/People-Counting'
 #Change working Directory
 %cd People-Counting
 ```
