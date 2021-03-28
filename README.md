@@ -3,7 +3,7 @@
 This project involves Object tracking implemented with YOLOv4, DeepSort, and TensorFlow. The code is customized to track people in crowds specifically, however, can be modified for other object categories. YOLOv4 is a state of the art algorithm that uses deep convolutional neural networks to perform object detections. Deep SORT is an object tracking module. We can take the output of YOLOv4 feed these object detections into Deep SORT in order to create a highly accurate object tracker.
 
 ## Demo of Object Tracker on Persons
-<p align="center"><img src="data/helpers/demo.gif"\></p>
+<p align="center"><img src="data/helpers/demo_1.gif"\></p>
 
 ## Clone this repository:
 ```bash
@@ -39,10 +39,10 @@ To implement the object tracking using YOLOv4, first we convert the .weights int
 
 ## Running Yolov4 + Deep Sort Object Tracker and People Counter
 
-# Convert darknet weights to tensorflow model
+## Convert darknet weights to tensorflow model
 python save_model.py --model yolov4 
 
-# Run yolov4 deep sort object tracker and people counting on video
+## Run yolov4 deep sort object tracker and people counting on video
 python object_tracker.py --weights ./checkpoints/yolov4-416 --model yolov4 --video ./data/video/test.mp4 --output ./outputs/outputs.avi 
 
 If running on collab, add ! prefix before python for the above line.
