@@ -4,6 +4,10 @@ This project involves Object tracking implemented with YOLOv4, DeepSort, and Ten
 
 ## Demo of Object Tracker on Persons
 <p align="center"><img src="data/helpers/demo.gif"\></p>
+<p align="center"><img src="data/helpers/demo.gif"\></p>
+<p align="center"><img src="data/helpers/demo.gif"\></p>
+<p align="center"><img src="data/helpers/demo.gif"\></p>
+
 
 ## Getting Started
 To get started, install the proper dependencies either via Anaconda or Pip. I recommend Anaconda route for people using a GPU as it configures CUDA toolkit version for you.
@@ -20,7 +24,7 @@ pip install -r requirements-gpu.txt
 
 ## Downloading Official YOLOv4 Pre-trained Weights
 Our object tracker uses YOLOv4 to make the object detections, which deep sort then uses to track. There exists an official pre-trained YOLOv4 object detector model that is able to detect 80 classes. For easy demo purposes we will use the pre-trained weights for our tracker.
-Download pre-trained yolov4.weights file: https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT
+Download pre-trained yolov4.weights file: https://drive.google.com/file/d/1lLiJgaTa_LAW7iezngl6IWvMaKAC7e5x/view?usp=sharing%27
 
 Copy and paste yolov4.weights from your downloads folder into the 'data' folder of this repository.
 
