@@ -5,9 +5,6 @@ This project involves Object tracking implemented with YOLOv4, DeepSort, and Ten
 ## Demo of Object Tracker on Persons
 <p align="center"><img src="data/helpers/demo.gif"\></p>
 
-## Demo of Object Tracker on Cars
-<p align="center"><img src="data/helpers/cars.gif"\></p>
-
 ## Getting Started
 To get started, install the proper dependencies either via Anaconda or Pip. I recommend Anaconda route for people using a GPU as it configures CUDA toolkit version for you.
 
@@ -32,8 +29,8 @@ If you want to use yolov4-tiny.weights, a smaller model that is faster at runnin
 ## Running the Tracker with YOLOv4
 To implement the object tracking using YOLOv4, first we convert the .weights into the corresponding TensorFlow model which will be saved to a checkpoints folder. Then all we need to do is run the object_tracker.py script to run our object tracker with YOLOv4, DeepSort and TensorFlow.
 
-## Running the Tracker with YOLOv4
-# Run yolov4 object tracker
+## Running Yolov4 + Deep Sort Object Tracker and People Counter
+
 python object_tracker.py --weights ./checkpoints/yolov4-416 --model yolov4 --video ./data/video/test.mp4 --output ./outputs/outputs.avi 
 
 If running on collab, add ! prefix before python for the above line.
